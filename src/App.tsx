@@ -1,11 +1,12 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import Header from './components/Header/Header';
+import { Display } from './GlobalStyles/Display/display.style';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <Text>Busca de endereço por CEP</Text>
-    </SafeAreaView>
+    <Display>
+      <Header />
+    </Display>
   );
 };
 
