@@ -1,3 +1,24 @@
+# Busca por CEP 📱
+
+Este é um projeto pessoal de um aplicativo desenvolvido em React Native e TypeScript que permite que o usuários insira um CEP e obtenha informações detalhadas sobre o endereço correspondente, incluindo o nome da rua, o bairro, a cidade e o estado. Após o resultado da pesquisa renderizado em tela, o usuário também tem a opção de copiar os dados da pesquisa para a área de transferência. <br/>
+
+Algumas bibliotecas utilizadas no desenvolvimento:
+- axios (Requisições)
+- React Hook Forms / @hookform/resolvers / Yup (Rormulário)
+- Styled Components (Estilização)
+
+Além do desenvolvimento, toda a parte de UX/UI também foi desenvolvida por mim e pensada de forma que proporciona uma boa experiência ao usuário. <br/>
+Protótipo no Figma: <br/>
+https://www.figma.com/file/UQZA0gMs6VHsHMOMWHf93x/Busca-por-cep?type=design&node-id=0-1&mode=design&t=LdRz1bP8LXR0wfJm-0 <br/>
+
+![tela1](https://github.com/alinecarvalhopro/BuscaPorCepAmieApps/assets/118927052/65e037ff-39fd-4eb7-a1ba-a274c20da485)
+![tela2](https://github.com/alinecarvalhopro/BuscaPorCepAmieApps/assets/118927052/674ff0bf-f0bc-49c3-94c7-84e89828bdd7)
+
+
+<br/>
+<br/>
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
