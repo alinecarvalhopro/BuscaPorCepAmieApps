@@ -28,7 +28,7 @@ const AddressSummary = ({address}: IAddressSummaryProps) => {
           <Text margin="0">{address.pais}</Text>
         </>
       ) : (
-        <Text margin="8px 0 0 0" type={textTypes.PARAGRAPH_SEMI_BOLD}>
+        <Text margin="0" type={textTypes.SUB_TITLE_REGULAR}>
           O endereço aparecerá aqui
         </Text>
       )}

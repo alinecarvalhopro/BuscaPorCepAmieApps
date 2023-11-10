@@ -5,13 +5,16 @@ import {Colors} from '../../GlobalStyles/Colors/colors';
 import Text from '../Text/Text';
 import {textTypes} from '../Text/textTypes';
 import {ActivityIndicator} from 'react-native';
+import {Icon} from '../Icon/Icon';
 
 interface ButtonProps extends TouchableOpacityProps {
   title: string;
+  icon?: string;
   width?: string;
   margin?: string;
   textAlign?: string;
   backgroundcolor?: string;
+  color?: any;
   type?: string;
   disabled?: boolean;
   loading?: boolean;
@@ -19,6 +22,7 @@ interface ButtonProps extends TouchableOpacityProps {
 }
 const Button = ({
   title,
+  icon,
   type,
   loading,
   disabled,
@@ -26,6 +30,7 @@ const Button = ({
   width,
   textAlign,
   backgroundcolor,
+  color,
   onPress,
   ...props
 }: ButtonProps) => {
@@ -40,13 +45,32 @@ const Button = ({
       {loading ? (
         <ActivityIndicator color={Colors.white} />
       ) : (
-        <Text
-          type={textTypes.PARAGRAPH_SEMI_BOLD}
-          color={color}
-          margin={margin}
-          textAlign={textAlign}>
-          {title}
-        </Text>
+        <>
+          {icon ? (
+            <>
+              <Text
+                type={textTypes.PARAGRAPH_SEMI_BOLD}
+                color={color}
+                margin="0 8px 0 0"
+                textAlign={textAlign}>
+                {title}
+              </Text>
+              <Icon
+                name={icon}
+                size={20}
+                color={color ? color : Colors.darkBlue}
+              />
+            </>
+          ) : (
+            <Text
+              type={textTypes.PARAGRAPH_SEMI_BOLD}
+              color={color}
+              margin={margin}
+              textAlign={textAlign}>
+              {title}
+            </Text>
+          )}
+        </>
       )}
     </>
   );
@@ -70,7 +94,7 @@ const Button = ({
         margin={margin}
         onPress={handleOnPress}
         width={width}>
-        {renderText(Colors.darkBlue)}
+        {renderText(color ? color : Colors.darkBlue)}
       </ButtonContainer>
     );
   }

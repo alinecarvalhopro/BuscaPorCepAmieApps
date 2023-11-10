@@ -10,8 +10,8 @@ import {FormContainer} from './form.style';
 import {Keyboard} from 'react-native';
 
 interface IFormProps {
-  address: IAddress
-  setAddress: React.Dispatch<React.SetStateAction<IAddress>>
+  address: IAddress;
+  setAddress: React.Dispatch<React.SetStateAction<IAddress>>;
 }
 
 export interface IAddress {
@@ -31,17 +31,10 @@ const schema = yup.object().shape({
   cep: yup.string().required('O campo CEP é obrigatório'),
 });
 
-const Form = ({address, setAddress}: IFormProps) => {
-  // const [address, setAddress] = useState<IAddress>({
-  //   cep: '',
-  //   logradouro: '',
-  //   bairro: '',
-  //   localidade: '',
-  //   uf: '',
-  // });
+const Form = ({setAddress}: IFormProps) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string>('');
-  
+
   const {
     control,
     handleSubmit,
@@ -54,6 +47,7 @@ const Form = ({address, setAddress}: IFormProps) => {
   const handleGetAddress = async (data: FormInputs) => {
     try {
       setLoading(true);
+
       await schema.validate(data);
 
       const {data: responseData} = await api.get(`/${data.cep}/json/`);
@@ -103,7 +97,6 @@ const Form = ({address, setAddress}: IFormProps) => {
         )}
         name="cep"
       />
-
       <Button
         title={isSubmitting ? '' : 'Buscar'}
         textAlign="center"

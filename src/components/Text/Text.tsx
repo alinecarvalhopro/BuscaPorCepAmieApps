@@ -2,6 +2,7 @@ import {TextProps as TextPropsNative} from 'react-native/types';
 import {useMemo} from 'react';
 import {textTypes} from './textTypes';
 import {ContainerText} from './text.style';
+import { Colors } from '../../GlobalStyles/Colors/colors';
 
 interface TextProps extends TextPropsNative {
   color?: string;
@@ -60,7 +61,7 @@ const Text = ({color, type, margin, textAlign, ...props}: TextProps) => {
     <ContainerText
       fontFamily={fontFamily}
       fontSize={fontSize}
-      color={color}
+      color={color ? color : Colors.grey}
       margin={margin}
       textAlign={textAlign}
       {...props}
