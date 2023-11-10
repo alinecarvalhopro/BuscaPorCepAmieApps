@@ -5,7 +5,7 @@ export const StyledHeader = styled.View`
   width: 100%;
   height: 80px;
 
-  background-color: ${Colors.DarkBlue};
+  background-color: ${Colors.darkBlue};
 
   position: relative;
 `;
@@ -20,7 +20,7 @@ export const StyledHeaderView = styled.View`
 
   padding: 16px;
 
-  background-color: ${Colors.LigthBlue};
+  background-color: ${Colors.ligthBlue};
 
   position: absolute;
   top: 40px;

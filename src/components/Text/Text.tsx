@@ -21,6 +21,8 @@ const Text = ({color, type, margin, textAlign, ...props}: TextProps) => {
       case textTypes.SUB_TITLE_MEDIUM:
       case textTypes.SUB_TITLE_SEMI_BOLD:
         return '18px';
+      case textTypes.PARAGRAPH_LIGTH:
+        return '12px';
       case textTypes.PARAGRAPH_REGULAR:
       case textTypes.PARAGRAPH_MEDIUM:
       case textTypes.PARAGRAPH_SEMI_BOLD:
@@ -47,7 +49,8 @@ const Text = ({color, type, margin, textAlign, ...props}: TextProps) => {
       case textTypes.PARAGRAPH_SEMI_BOLD:
       case textTypes.PARAGRAPH_SEMI_BOLD:
         return 'Nunito-SemiBold';
-
+      case textTypes.PARAGRAPH_LIGTH:
+        return 'Nunito-Ligth';
       default:
         return 'Nunito-Regular';
     }
@@ -58,8 +61,8 @@ const Text = ({color, type, margin, textAlign, ...props}: TextProps) => {
       fontFamily={fontFamily}
       fontSize={fontSize}
       color={color}
-      custonMargin={margin}
-      customTextAlign={textAlign}
+      margin={margin}
+      textAlign={textAlign}
       {...props}
     />
   );
