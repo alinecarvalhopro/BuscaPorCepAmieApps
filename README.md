@@ -5,8 +5,8 @@ Este é um projeto pessoal de um aplicativo desenvolvido em React Native e TypeS
 Além de oferecer uma solução independente e eficiente ao usuário, a funcionalidade deste app também é muito comum em diversos formulários de cadastro.
 
 Algumas bibliotecas utilizadas no desenvolvimento:
-- axios (Requisições)
-- React Hook Forms / @hookform/resolvers / Yup (Rormulário)
+- Axios (Requisições)
+- React Hook Forms / @hookform/resolvers / Yup (Formulário)
 - Styled Components (Estilização)
 
 Além do desenvolvimento, toda a parte de UX/UI também foi desenvolvida por mim e pensada de forma que proporciona uma boa experiência ao usuário. <br/>
