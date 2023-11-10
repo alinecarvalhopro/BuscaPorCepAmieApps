@@ -9,7 +9,13 @@ import api from '../../services/api';
 import {FormContainer} from './form.style';
 import {Keyboard} from 'react-native';
 
-interface IAddress {
+interface IFormProps {
+  address: IAddress
+  setAddress: React.Dispatch<React.SetStateAction<IAddress>>
+}
+
+export interface IAddress {
+  pais: string;
   cep: string;
   logradouro: string;
   bairro: string;
@@ -25,14 +31,14 @@ const schema = yup.object().shape({
   cep: yup.string().required('O campo CEP é obrigatório'),
 });
 
-const Form = () => {
-  const [address, setAddress] = useState<IAddress>({
-    cep: '',
-    logradouro: '',
-    bairro: '',
-    localidade: '',
-    uf: '',
-  });
+const Form = ({address, setAddress}: IFormProps) => {
+  // const [address, setAddress] = useState<IAddress>({
+  //   cep: '',
+  //   logradouro: '',
+  //   bairro: '',
+  //   localidade: '',
+  //   uf: '',
+  // });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string>('');
   
@@ -53,6 +59,7 @@ const Form = () => {
       const {data: responseData} = await api.get(`/${data.cep}/json/`);
 
       setAddress({
+        pais: 'Brasil',
         cep: data.cep,
         logradouro: responseData.logradouro || '',
         bairro: responseData.bairro || '',
