@@ -15,6 +15,7 @@ interface InputProps {
   errorMessage?: string;
   margin?: string;
   width?: string;
+  textAlign?: string;
   onChange: (text: NativeSyntheticEvent<TextInputChangeEventData>) => void;
   value: string;
 }
@@ -25,6 +26,7 @@ const Input = ({
   isError,
   errorMessage,
   margin,
+  textAlign,
   onChange,
   value,
   width,
@@ -37,7 +39,7 @@ const Input = ({
           margin="0 0 4px 0"
           type={textTypes.SUB_TITLE_SEMI_BOLD}
           color={Colors.grey}
-          textAlign="left">
+          textAlign="start">
           {title}
         </Text>
       )}
@@ -51,7 +53,6 @@ const Input = ({
         {...props}
       />
       {errorMessage && <StyledTextError>{errorMessage}</StyledTextError>}
-
     </StyledInputContainer>
   );
 };
