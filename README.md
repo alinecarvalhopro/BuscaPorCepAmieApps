@@ -1,6 +1,6 @@
 # Busca por CEP 📱
 
-Este é um projeto pessoal de um aplicativo desenvolvido em React Native e TypeScript que permite que o usuários insira um CEP e obtenha informações detalhadas sobre o endereço correspondente, incluindo o nome da rua, o bairro, a cidade e o estado. Após o resultado da pesquisa renderizado em tela, o usuário também tem a opção de copiar os dados da pesquisa para a área de transferência. <br/>
+Este é um projeto pessoal de um aplicativo desenvolvido em React Native e TypeScript que permite que o usuário insira um CEP e obtenha informações detalhadas sobre o endereço correspondente, incluindo o nome da rua, o bairro, a cidade e o estado. Após o resultado da pesquisa renderizado em tela, o usuário também tem a opção de copiar os dados da pesquisa para a área de transferência. <br/>
 
 Além de oferecer uma solução independente e eficiente ao usuário, a funcionalidade deste app também é muito comum em diversos formulários de cadastro.
 
