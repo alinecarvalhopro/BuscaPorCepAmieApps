@@ -7,14 +7,18 @@ Além de oferecer uma solução independente e eficiente ao usuário, a funciona
 Algumas bibliotecas utilizadas no desenvolvimento:
 - Axios (Requisições)
 - React Hook Forms / @hookform/resolvers / Yup (Formulário)
-- Styled Components (Estilização)
+- Styled Components (Estilização) <br/>
+
+Segue o link do App publicado na Google Play: <br/>
+https://play.google.com/store/apps/details?id=com.buscaporcepamieapps <br>
 
 Além do desenvolvimento, toda a parte de UX/UI também foi desenvolvida por mim e pensada de forma que proporciona uma boa experiência ao usuário. <br/>
 Protótipo no Figma: <br/>
 https://www.figma.com/file/UQZA0gMs6VHsHMOMWHf93x/Busca-por-cep?type=design&node-id=0-1&mode=design&t=LdRz1bP8LXR0wfJm-0 <br/>
 
-![tela1](https://github.com/alinecarvalhopro/BuscaPorCepAmieApps/assets/118927052/65e037ff-39fd-4eb7-a1ba-a274c20da485)
-![tela2](https://github.com/alinecarvalhopro/BuscaPorCepAmieApps/assets/118927052/674ff0bf-f0bc-49c3-94c7-84e89828bdd7)
+![tela1](https://github.com/alinecarvalhopro/BuscaPorCepAmieApps/assets/118927052/ca090266-8586-4aec-917e-51d0d3285124)
+![tela2](https://github.com/alinecarvalhopro/BuscaPorCepAmieApps/assets/118927052/bb956707-9bca-426c-9948-86f0d1d76cb5)
+
 
 
 <br/>
